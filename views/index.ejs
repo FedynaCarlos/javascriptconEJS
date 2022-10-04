@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/register.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+<link rel="stylesheet" href="/css/home.css">
+
+</head>
+<body>
+<h1>Estamos en el index</h1>
+<p>Hobbies</p>
+<form action="POST" action="/mainRouters/index">
+    <label for="">nombre</label>
+    <input type="text" name="nombre">
+    <p>Hobbies</p>
+<% for(let i = 1; i < 15; i++) {%>
+    <label for="">Hobbie <%= i %></label>
+    <% if (i % 2 == 0) {%>
+    <input class="par" type="text" name="hobbies[]">
+<% } else { %>
+    <input class="impar" type="text" name="hobbies[]">
+<% } %>
+<br>
+    <% } %>
+</form>
+<img src="/images/australian.jpg" width="400">
+</body>
+</html>

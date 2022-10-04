@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+
+h1{
+    text-align: center;
+    color: tomato;
+}
+.impar{
+    border:green solid;
+}
+.par{
+    border: red solid;
+}
